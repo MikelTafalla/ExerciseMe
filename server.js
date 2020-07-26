@@ -9,7 +9,6 @@ const app = express();
 app.use(logger("dev"))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
@@ -17,6 +16,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
+const db = require("./models");
 // routes
 // app.use(require("./routes/api.js"));
 
