@@ -2,9 +2,9 @@
 
 [Live App](https://radiant-hamlet-39822.herokuapp.com/)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/MikelTafalla/https://github.com/MikelTafalla/ExerciseMe?logo=github)
-![GitHub top language](https://img.shields.io/github/languages/top/MikelTafalla/https://github.com/MikelTafalla/ExerciseMe?color=green&logo=github&logoColor=green)
-![GitHub language count](https://img.shields.io/github/languages/count/MikelTafalla/https://github.com/MikelTafalla/ExerciseMe?color=green&logo=github&logoColor=green)
+![GitHub repo size](https://img.shields.io/github/repo-size/MikelTafalla/ExerciseMe?logo=github)
+![GitHub top language](https://img.shields.io/github/languages/top/MikelTafalla/ExerciseMe?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/MikelTafalla/ExerciseMe?color=green&logo=github&logoColor=green)
 
 Track your workout progress with exerciseMe. This app allows you to continue with your workout, add new exercises to your current workout or create a new workout. The app allows you to check your progress on the app dashboard, where you would have access to different types of graphs with all the information.
 
