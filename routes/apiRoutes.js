@@ -12,7 +12,7 @@ router.get("/api/workouts", (req, res) => {
       res.status(400).json(err);
     });
 });
-// $push: { friends: friend }
+
 router.post("/api/workouts", ({body}, res) => {
   Workout.create(body)
     .then(dbWorkout => {
