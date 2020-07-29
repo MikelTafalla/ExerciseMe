@@ -24,6 +24,10 @@ const workoutSchema = new Schema({
         type: Number,
         required: "Enter duration time"
       },
+      distance: {
+        type: Number,
+        required: [false, "Enter distance"]
+      },
       weight: {
         type: Number,
         required: [false, "Enter weight"]
@@ -38,7 +42,23 @@ const workoutSchema = new Schema({
       }
     }
   ]
-});
+},
+  {
+    toJSON: {
+      virtuals: true
+    }
+  }
+);
+//Add virtual property to schema called totalDuration
+workoutSchema
+  .virtual("totalDuration")
+  .get(function () {
+    let totalDuration = 0
+    for (let i = 0; i < this.exercises.length; i++) {
+      totalDuration += this.exercises[i].duration
+    }
+    return totalDuration;
+  });
 
 const Workout = mongoose.model("Workout", workoutSchema);
 
